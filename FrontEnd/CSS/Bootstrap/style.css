@@ -1,0 +1,254 @@
+:root {
+  --secondary: #c83660;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+/* .navbar {
+  font-size: 18px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+} */
+
+.header-image {
+  background-image: url("./images/bg_4.jpg");
+  background-position: center 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-text-container {
+  width: 90%;
+  max-width: 1200px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.subtitle {
+  width: 80%;
+  max-width: 700px;
+}
+
+.middle-max-width {
+  max-width: 1200px;
+}
+
+.section-margin {
+  padding: 60px 0;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow {
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 70px;
+}
+
+.big-image-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  position: relative;
+}
+
+.big-image-section .container {
+  z-index: 3;
+}
+
+.big-image-section:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.first-big-background-image {
+  background-position: center;
+  background-image: url("./images/bg_2.jpg");
+}
+
+.second-big-background-image {
+  background-position: center top;
+  background-image: url("./images/bg_3.jpg");
+}
+
+.third-big-background-image {
+  background-position: center top;
+  background-image: url("./images/bg_1.jpg");
+}
+
+.horizontal-boxes-image {
+  width: 100px;
+  height: 100px;
+}
+
+.images-section-box {
+  cursor: pointer;
+  max-width: 500px;
+}
+
+.images-section-box p,
+.images-section-box h5 {
+  text-align: left;
+}
+
+.images-section-box:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.images-section-box:hover p {
+  color: rgb(231, 227, 227);
+}
+
+.btn-check + .btn {
+  background: #eee;
+  border-color: #eee;
+  color: var(--secondary);
+}
+
+.btn-check:hover + .btn {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: white;
+}
+
+.btn-check:checked + .btn {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: white;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.form {
+  max-width: 700px;
+  display: grid;
+  gap: 16px;
+}
+
+.pr-4 {
+  padding-right: 10px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  color: rgb(248, 244, 244);
+}
+
+/* Statics */
+
+.text-pink {
+  color: var(--secondary);
+}
+
+.bg-pink {
+  background: var(--secondary);
+}
+
+.text-gray {
+  color: #ababab;
+}
+
+/* .navbar-light {
+  background: white !important;
+  box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 1);
+}
+
+.navbar-dark {
+  background: transparent;
+}
+
+.navbar-light .nav-link,
+.navbar-light .navbar-brand {
+  color: black;
+}
+
+.navbar-dark .nav-link,
+.navbar.navbar-dark .nav-link:hover {
+  color: white;
+}
+
+.navbar-light .active,
+.navbar-dark .active,
+.navbar.navbar-light .nav-link:hover {
+  color: var(--secondary);
+} */
+
+@media (max-width: 992px) {
+  .offcanvas-body .nav-link {
+    color: white;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 0px !important;
+  }
+
+  .navbar-dark .nav-link:after {
+    border-bottom: solid 3px white;
+  }
+
+  .navbar-light .nav-link:after {
+    border-bottom: solid 3px var(--secondary);
+  }
+
+  .nav-link {
+    position: relative;
+    padding: 10px 0px !important;
+  }
+
+  .nav-link:after {
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .nav-link.active::after {
+    transform: scaleX(1);
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 450px) {
+  .images-section-box p {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 4px;
+  }
+  .images-section-box h5 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
