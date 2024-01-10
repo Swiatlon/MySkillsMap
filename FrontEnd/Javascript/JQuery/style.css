@@ -59,6 +59,14 @@ li.completed {
     cursor: pointer;
 }
 
+.complete-btn {
+    background-color: #048d10;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
 #filter-options {
     margin-top: 10px;
 }
