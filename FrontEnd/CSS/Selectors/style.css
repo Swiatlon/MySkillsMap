@@ -1,0 +1,57 @@
+.container1 p {
+  background: lightgray;
+}
+
+.container2 ul li:first-child,
+.container2 ul li:last-child {
+  border: 1px solid red;
+}
+
+/* important there need to be of type, not child! */
+.container3 > p:nth-of-type(2) {
+  color: burlywood !important;
+}
+
+.container4 > *:nth-child(even) {
+  background-color: lightblue;
+}
+
+.container4 > *:nth-child(odd) {
+  background-color: lightcoral;
+}
+
+.child-child {
+  background: white;
+}
+
+.container5 p > a[href^="https:"] {
+  /* text-decoration: underline; */
+  border-bottom: 5px solid red;
+}
+
+.container6 h1 + p,
+.container6 h2 + p {
+  margin-top: 25px; /* Adjust the margin value as needed */
+  font-weight: bold;
+}
+
+.container7 > div:nth-of-type(2) > .special {
+  background: rgb(7, 224, 123);
+  color: rgb(38, 0, 128);
+}
+
+.container8 > div:has(.highlight) > p:last-of-type {
+    background-color: red;
+    color: white;
+}
+
+.container8 > div:has(.highlight) .highlight {
+    border: 2px solid black;
+}
+
+/* GENERAL */
+
+div[class^="container"] {
+  padding: 16px;
+  border-top: 1px solid black;
+}

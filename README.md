@@ -9,6 +9,7 @@ Repository that will show what technologies I have learned
 ## CSS FOLDER
 
 Bootstrap: <https://swiatlon.github.io/MySkillsMap/FrontEnd/CSS/Bootstrap/index.html>
+Selectors: <https://swiatlon.github.io/MySkillsMap/FrontEnd/CSS/Selectors/index.html>
 
 ## JAVASCRIPT FOLDER
 
