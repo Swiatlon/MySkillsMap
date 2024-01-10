@@ -37,7 +37,7 @@ body {
 }
 
 .section-margin {
-  padding: 60px 0;
+  padding: 60px 0px;
 }
 
 .card:hover {
@@ -157,6 +157,10 @@ footer {
   padding: 0;
   background: rgb(0, 0, 0);
   color: rgb(248, 244, 244);
+}
+
+.swiper{
+  width: 90%;
 }
 
 /* Reveal animation */
